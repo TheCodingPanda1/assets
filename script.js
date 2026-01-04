@@ -12,4 +12,5 @@ function resizeSVG () {
             svg.style.scale = width / 16;
         }
     }
+    document.body.removeChild(div);
 }
