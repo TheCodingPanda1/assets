@@ -1,5 +1,5 @@
 //Resizing svgs
-function resizeSVG () {
+export function resizeSVG () {
     var svgs = document.getElementsByClassName("resizable");
     console.log(svgs);
     var div = document.createElement("div");
@@ -16,4 +16,3 @@ function resizeSVG () {
     }
     document.body.removeChild(div);
 }
-export {resizeSVG}
