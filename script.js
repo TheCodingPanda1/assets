@@ -1,5 +1,5 @@
 //Resizing svgs
-export function resizeSVG () {
+export const resizeSVG = function () {
     var svgs = document.getElementsByClassName("resizable");
     console.log(svgs);
     var div = document.createElement("div");
