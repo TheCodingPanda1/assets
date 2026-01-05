@@ -10,7 +10,7 @@ export const resizeSVG = function () {
     } else {
         var width = div.clientWidth;
         for(var i = 0; i < svgs.length; i ++){
-            svgs[i].style.scale = 16/width;
+            svgs[i].style.scale = width / 16;
         }
     }
     document.body.removeChild(div);
