@@ -9,9 +9,10 @@ export const resizeSVG = function () {
         return;
     } else {
         var width = div.clientWidth;
-        svgs.foreach((el)=>{
-            el.style.scale = width / 16;
-        });
+        for(var i = 0; i < svgs.length; i ++){
+            svgs[i].style.scale = 16/width;
+        }
     }
     document.body.removeChild(div);
 }
+resizeSVG();
