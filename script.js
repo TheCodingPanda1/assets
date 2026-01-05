@@ -16,3 +16,4 @@ function resizeSVG () {
     }
     document.body.removeChild(div);
 }
+export {resizeSVG}
