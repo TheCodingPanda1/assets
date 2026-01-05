@@ -13,7 +13,7 @@ export const resizeSVG = function () {
             if(window.getComputedStyle(svgs[i]).scale){
                 svgs[i].style.scale = parseFloat(window.getComputedStyle(svgs[i]).scale) * (width / 16);
             }
-            svgs[i].style.scale = width / 16;
+            svgs[i].style.scale = 16 / width;
         }
     }
     document.body.removeChild(div);
