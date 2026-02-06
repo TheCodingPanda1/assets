@@ -21,3 +21,12 @@ export const resizeSVG = function () {
     document.body.removeChild(div);
 }
 resizeSVG();
+export const cssVar = function(variable){
+    var div = document.createElement("div");
+    div.style.height = `var(--${variable})`;
+    document.body.appendChild(div);
+    var height = div.clientHeight;
+    document.body.removeChild(div);
+    return height;
+}
+console.log(cssVar("rem"));
