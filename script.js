@@ -27,6 +27,9 @@ export const cssVar = function(variable){
     document.body.appendChild(div);
     var height = div.clientHeight;
     document.body.removeChild(div);
-    return height;
+    if(height != 0){
+        return height;
+    } else {
+        return parseFloat(window.getComputedStyle(document.documentElement).getPropertyValue("--rem"));
+    }
 }
-console.log(cssVar("rem"));
