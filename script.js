@@ -30,6 +30,6 @@ export const cssVar = function(variable){
     if(height != 0){
         return height;
     } else {
-        return parseFloat(window.getComputedStyle(document.documentElement).getPropertyValue("--rem"));
+        return parseFloat(window.getComputedStyle(document.documentElement).getPropertyValue("--" + variable));
     }
 }
