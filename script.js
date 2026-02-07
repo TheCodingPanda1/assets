@@ -33,3 +33,11 @@ export const cssVar = function(variable){
         return parseFloat(window.getComputedStyle(document.documentElement).getPropertyValue("--" + variable));
     }
 }
+export const pxify = function(num){
+    var div = document.createElement("div");
+    div.style.height = num + "rem";
+    document.body.appendChild(div);
+    var height = div.clientHeight;
+    document.body.removeChild(div);
+    return height;
+}
